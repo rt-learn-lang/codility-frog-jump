@@ -9,11 +9,12 @@ describe 'solution' do
   context 'When testing the solution' do
     inputs = [
       [10, 85, 30],
-      [10, 10, 30]
+      [10, 10, 30],
+      [1, 1_000_000_000, 1]
     ]
 
     expecteds = [
-      3, 0
+      3, 0, 1_000_000_000 - 1
     ]
 
     inputs.each_with_index do |input, index|
